@@ -1,0 +1,35 @@
+<div class="resultado">
+    <h1>{{result}}</h1>
+</div>
+
+<div class="numeros">
+    <p>{{number1}}</p>
+    <p>{{operationStr}}</p>
+    <p>{{number2}}</p>
+</div>
+
+<div class="botones">
+    <div class="fila1">
+        <input type="button" value="7" (click)="addNumber(7)">
+        <input type="button" value="8" (click)="addNumber(8)">
+        <input type="button" value="9" (click)="addNumber(9)">
+    </div>
+
+    <div class="fila2">
+        <input type="button" value="4" (click)="addNumber(4)">
+        <input type="button" value="5" (click)="addNumber(5)">
+        <input type="button" value="6" (click)="addNumber(6)">
+    </div>
+
+    <div class="fila3">
+        <input type="button" value="0" (click)="addNumber(0)">
+        <input type="button" value="1" (click)="addNumber(1)">
+        <input type="button" value="2" (click)="addNumber(2)">
+        <input type="button" value="3" (click)="addNumber(3)">
+    </div>
+
+    <input type="button" value="-" (click)="minus()">
+    <input type="button" value="+" (click)="sum()">
+    <input type="button" value="<-" (click)="removeNumber()">
+    <input type="button" value="=" (click)="loadResult()">
+</div>

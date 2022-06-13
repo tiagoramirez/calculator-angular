@@ -1,0 +1,16 @@
+.resultado h1{
+    color: white;
+}
+
+.numeros p{
+    color: white;
+}
+
+.numeros{
+    display: flex;
+    flex-direction: row;
+}
+
+.botones{
+    display: flex;
+}
