@@ -1,7 +1,11 @@
 app-calculator {
     display: flex;
-    height: 100vh;
+    height: auto;
+    width: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #7E7C73;
+    padding: 1rem;
+    border-radius: 2rem;
 }
