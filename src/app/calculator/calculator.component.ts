@@ -25,12 +25,9 @@ export class CalculatorComponent {
 	removeNumber() {
 		if (this.isTurnNumber2) {
 			this.number2 = this.number2.substring(0, this.number2.length - 1);
-			console.log(this.number2);
 		}
 		else {
 			this.number1 = this.number1.substring(0, this.number1.length - 1);
-			console.log(this.number1);
-
 		}
 	}
 
@@ -49,17 +46,22 @@ export class CalculatorComponent {
 	loadResult() {
 		switch (this.operation) {
 			case 0:
-				if(!isNaN(parseInt(this.number1))){
+				if(this.number1!==""){
 					this.result=parseInt(this.number1);
+					this.reset();
 				}
 				break;
 			case 1:
-				this.result = parseInt(this.number1) + parseInt(this.number2);
-				this.reset();
+				if(this.number2!==""){
+					this.result = parseInt(this.number1) + parseInt(this.number2);
+					this.reset();
+				}
 				break;
 			case 2:
-				this.result = parseInt(this.number1) - parseInt(this.number2);
-				this.reset();	
+				if(this.number2!==""){
+					this.result = parseInt(this.number1) - parseInt(this.number2);
+					this.reset();
+				}	
 				break;
 		}
 	}

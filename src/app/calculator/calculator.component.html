@@ -9,6 +9,12 @@
 </div>
 
 <div class="botones">
+    <div class="operaciones1">
+        <input type="button" value="-" (click)="minus()">
+        <input type="button" value="+" (click)="sum()">
+        <input type="button" value="<-" (click)="removeNumber()">
+    </div>
+
     <div class="fila1">
         <input type="button" value="7" (click)="addNumber(7)">
         <input type="button" value="8" (click)="addNumber(8)">
@@ -22,14 +28,13 @@
     </div>
 
     <div class="fila3">
-        <input type="button" value="0" (click)="addNumber(0)">
         <input type="button" value="1" (click)="addNumber(1)">
         <input type="button" value="2" (click)="addNumber(2)">
         <input type="button" value="3" (click)="addNumber(3)">
     </div>
-
-    <input type="button" value="-" (click)="minus()">
-    <input type="button" value="+" (click)="sum()">
-    <input type="button" value="<-" (click)="removeNumber()">
-    <input type="button" value="=" (click)="loadResult()">
+    <div class="fila4">
+        <input type="button" value="0" (click)="addNumber(0)">
+        <input type="button" value=".">
+        <input type="button" value="=" (click)="loadResult()">
+    </div>
 </div>
