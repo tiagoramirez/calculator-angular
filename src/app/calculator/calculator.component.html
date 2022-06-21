@@ -1,46 +1,7 @@
-<div class="resultado">
-    <h1>{{result}}</h1>
-</div>
+<app-result [result]="result"></app-result>
 
-<div class="numeros">
-    <p>{{number1}}</p>
-    <p>{{operationStr}}</p>
-    <p>{{number2}}</p>
-</div>
+<app-numbers [number1]="number1" [number2]="number2" [operationStr]="operationStr"></app-numbers>
 
-<div class="botones">
-    <div class="operaciones1">
-        <input type="button" value="*" (click)="mult()">
-        <input type="button" value="/" (click)="div()">
-        <input type="button" value="CA" (click)="clearAll()">
-    </div>
-
-    <div class="operaciones2">
-        <input type="button" value="-" (click)="minus()">
-        <input type="button" value="+" (click)="sum()">
-        <input type="button" value="C" (click)="removeNumber()">
-    </div>
-
-    <div class="fila1">
-        <input type="button" value="7" (click)="addNumber(7)">
-        <input type="button" value="8" (click)="addNumber(8)">
-        <input type="button" value="9" (click)="addNumber(9)">
-    </div>
-
-    <div class="fila2">
-        <input type="button" value="4" (click)="addNumber(4)">
-        <input type="button" value="5" (click)="addNumber(5)">
-        <input type="button" value="6" (click)="addNumber(6)">
-    </div>
-
-    <div class="fila3">
-        <input type="button" value="1" (click)="addNumber(1)">
-        <input type="button" value="2" (click)="addNumber(2)">
-        <input type="button" value="3" (click)="addNumber(3)">
-    </div>
-    <div class="fila4">
-        <input type="button" value="0" (click)="addNumber(0)">
-        <input type="button" value="." (click)="addPoint()">
-        <input type="button" value="=" (click)="loadResult()">
-    </div>
-</div>
+<app-buttons (addNumberEvent)="addNumber($event)" (removeNumberEvent)="removeNumber()" (multEvent)="mult()"
+    (divEvent)="div()" (clearAllEvent)="clearAll()" (minusEvent)="minus()" (sumEvent)="sum()"
+    (addPointEvent)="addPoint()" (loadResultEvent)="loadResult()"></app-buttons>

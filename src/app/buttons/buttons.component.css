@@ -1,0 +1,15 @@
+input {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    border: .1rem #140005 solid;
+    margin: .1rem;
+    color: #140005;
+    background-color: #BBC4C2;
+}
+
+input:hover{
+    color: #BBC4C2;
+    background-color: #140005;
+}
