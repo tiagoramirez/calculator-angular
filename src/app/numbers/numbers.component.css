@@ -1,3 +1,8 @@
+:host{
+    display: flex;
+    flex-direction: row;
+}
+
 p {
     color: #464033;
     font-size: 1.5rem;

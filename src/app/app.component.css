@@ -1,11 +1,7 @@
-app-calculator {
+:host{
     display: flex;
-    height: auto;
-    width: auto;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    background-color: #7E7C73;
-    padding: 1rem;
-    border-radius: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
 }

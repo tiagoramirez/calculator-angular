@@ -1,3 +1,8 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
 input {
     width: 4rem;
     height: 4rem;
@@ -9,7 +14,7 @@ input {
     background-color: #BBC4C2;
 }
 
-input:hover{
+input:hover {
     color: #BBC4C2;
     background-color: #140005;
 }

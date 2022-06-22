@@ -3,10 +3,7 @@ body {
     background-color: #140005;
 }
 
-app-root {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
+a{
+    color: white;
+    margin: 4rem;
 }
