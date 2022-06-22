@@ -3,9 +3,10 @@ body {
     background-color: #140005;
 }
 
-app-root{
+app-root {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
 }
